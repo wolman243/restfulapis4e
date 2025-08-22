@@ -45,7 +45,7 @@ npm install          # node_modules klasörü otomatik oluşur
 npm start            # veya npm run dev
 ```
 
-Backend varsayılan olarak `http://localhost:3000` üzerinde çalışır.
+Backend varsayılan olarak `http://localhost:5000` üzerinde çalışır.
 
 ### 3. Frontend Kurulumu
 ```bash
@@ -54,7 +54,7 @@ npm install          # node_modules klasörü otomatik oluşur
 npm start            # veya npm run dev
 ```
 
-Frontend varsayılan olarak `http://localhost:3001` üzerinde çalışır.
+Frontend varsayılan olarak `http://localhost:3000` üzerinde çalışır.
 
 ## 📋 Gereksinimler
 
@@ -115,6 +115,18 @@ frontend/build/
 # IDE ayar dosyaları
 .vscode/
 .idea/
+```
+Environment Variables
+
+```bash
+# .env.local
+# API Configuration
+NEXT_PUBLIC_API_URL=http://localhost:5000
+NEXT_PUBLIC_API_URL_INTERNAL=http://flask_app:5000
+
+# Development
+NODE_ENV=development
+NEXT_TELEMETRY_DISABLED=1
 ```
 
 ## 🔄 Yeni Geliştirici Rehberi
